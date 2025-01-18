@@ -1,0 +1,4 @@
+# Groovy NullPointerException when checking String length
+This repository demonstrates a common Groovy error: a `NullPointerException` arising from using the `length()` method on a potentially null string.  The `bug.groovy` file contains the flawed code, while `bugSolution.groovy` provides a corrected version.
+
+The problem occurs because Groovy doesn't automatically handle null checks for methods like `length()`.  Attempting to call `length()` on a null string results in the exception.  The solution involves explicitly checking for null before invoking `length()` or using Groovy's safe navigation operator.
